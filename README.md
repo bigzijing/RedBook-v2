@@ -1,3 +1,22 @@
+# RedBook v2
+
+My personal workspace for completing the exercises in the second edition of
+[*Functional Programming in Scala*](https://www.manning.com/books/functional-programming-in-scala-second-edition)
+using Scala 3 and Scala CLI.
+
+My first-edition exercise history is preserved in
+[`bigzijing/RedBook`](https://github.com/bigzijing/RedBook).
+
+This repository began from the
+[`second-edition`](https://github.com/fpinscala/fpinscala/tree/second-edition)
+branch of the official [`fpinscala/fpinscala`](https://github.com/fpinscala/fpinscala)
+repository. Personal solutions are implemented under
+`src/main/scala/fpinscala/exercises`.
+
+---
+
+## Official project documentation
+
 [![Join the chat at https://gitter.im/fpinscala/fpinscala](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/fpinscala/fpinscala?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
 
 This repository contains exercises, hints, and answers for the book
@@ -113,4 +132,3 @@ wiki](https://github.com/fpinscala/fpinscala/wiki) for the **chapter
 notes**, links to more reading, and more.
 
 _Paul, Rúnar, and Michael_
-
