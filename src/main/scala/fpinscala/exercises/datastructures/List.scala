@@ -51,16 +51,13 @@ object List: // `List` companion object. Contains functions for creating and wor
 
   def tail[A](l: List[A]): List[A] = 
     l match
-      case Nil => sys.error("message")
-      case Cons(Nil, Nil) => sys.error("Error!")
+      case Nil => sys.error("Tail of empty list")
       case Cons(head, tail) => tail 
     
-
   def setHead[A](l: List[A], h: A): List[A] = 
     l match
       case Cons(head, tail) => Cons(h, tail)
-      case _ => sys.error("message")
-    
+      case _ => sys.error("Cannot setHead on empty list")
 
   def drop[A](l: List[A], n: Int): List[A] = 
     if n <= 0 then l 
@@ -77,7 +74,7 @@ object List: // `List` companion object. Contains functions for creating and wor
     l match
       case Cons(head, Cons(tail, Nil)) => Cons(head, Nil) 
       case Cons(head, tail) => Cons(head, init(tail))
-      case Nil => sys.error("message")
+      case Nil => sys.error("Cannot call init on empty list")
     
   def length[A](l: List[A]): Int = 
     foldRight(l, 0, (_, acc) => acc + 1)
